@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="form-container">
+            <img src="./icons/logo.svg" alt="logo" class="logo">
+
+            <h1>Create a new password</h1>
+            <p>Enter a new password for your account</p>
+            <form action="/" class="form-container">
+
+                <!--password input-->
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="password" class="input input-password"
+                    autocomplete="new-password" required>
+
+                <!--repeat password input-->
+                <label for="password-repeat">Repeat password</label>
+                <input type="password" id="password-repeat" placeholder="Repeat password"
+                    class="input input-password-repeat" autocomplete="new-password" required>
+
+                <input type="submit" class="primary-button login-button" value="Confirm">
+                <!--using button instead of input because it triggers the required attribute and shows the browser default error-->
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
